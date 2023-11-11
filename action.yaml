@@ -13,6 +13,7 @@ runs:
   using: "composite"
   steps:
     - name: Hello
+      shell: bash
       - run: echo Hello ${{ inputs.who-to-greet }}.
         shell: bash
       - run: cat README.md
