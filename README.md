@@ -16,3 +16,11 @@ jobs:
           url:  ${{ secrets.LH_URL }}
           cmd:  ${{ secrets.LH_CMD }}
 ```
+
+Examples
+```
+LH_ISSUER=user
+LH_SECRET=password
+LH_URL=http://localhost:8888/api/v1/func/linux/execute
+LH_CMD=sudo system restart yourservice.service
+```
